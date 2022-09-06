@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        margin: 0 auto;
+        padding: 120px;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Welocome To login page</h1>
+    </center>
+    <hr>
+
+    <div>
+        Username :<br><br>
+        <input type="text" name="text" id="username">
+        <br><br>
+        Password:<br><br>
+
+        <input type="password" name="text" id="password">
+        <br><br>
+        Submit:<br><br>
+        <button onclick="login()">Submit</button>
+    </div>
+
+    <br><br>
+    
+
+    <script>
+        function login() {
+            var uname = document.getElementById('username').value;
+            var pass = document.getElementById("password").value
+
+            if (uname == "World" && pass == "123") {
+                location.assign("file:///C:/Users/jain7/Desktop/prajyot/HTML%20PROJECT/page.html")
+            }
+            else{
+                window.alert("Your Login Has Faled")
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

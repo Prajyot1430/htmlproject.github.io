@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coutdown Timer</title>
+</head>
+<style>
+    .Cout-Down {
+        width: 600px;
+        height: 200px;
+        background-color: antiquewhite;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    #tut {
+
+        width: 400px;
+        height: 100px;
+        background-color: aqua;
+        background-image: linear-gradient(#16bffd, #cb3066);
+        padding: 10px;
+        text-align: center;
+        /* margin-top: 100px; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+    }
+
+    h1 {
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #time-out {
+        margin-top: 50px;
+        width: 300px;
+        height: 80px;
+        background-image: linear-gradient(#16bffd, #cb3066);
+        text-align: center;
+    }
+
+    #tut1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 30px;
+        font-size: larger;
+    }
+</style>
+
+<body>
+    <div class="Cout-Down">
+        <h1>Coutdown Start</h1>
+        <div id="tut">
+        </div>
+    </div>
+    <div id="time-out">
+        <p id="tut1">10:00</p>
+    </div>
+    <script>
+        var dest = new Date("oct 23,2022 12:00:00").getTime();
+        setInterval(function () {
+
+            var now = new Date().getTime();
+            var diff = dest - now;
+
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            //  console.log(days);
+
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            //  console.log(hours)
+            var min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            // console.log(min);
+            var sec = Math.floor((diff % (1000 * 60)) / 1000);
+            // console.log(sec);
+
+            document.getElementById('tut').innerHTML = days + "d, " + hours + "hrs: " + min + "m:" + sec + "s";
+
+        }, 1000);
+
+
+
+        const startmin=1;
+        let time=startmin*60;
+        // console.log(time);
+
+
+        const countdown=document.getElementById('tut1');
+
+        setInterval(updatecoutdown,1000);
+
+
+        function updatecoutdown(){
+            const min=Math.floor(time/60);
+            let sec=time%60;
+
+            if(min===sec) {
+                
+
+            }
+
+            countdown.innerHTML=`${min}:${sec}`;
+            time--;
+
+
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

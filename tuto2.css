@@ -1,0 +1,350 @@
+li{
+    display:inline;
+    list-style: none;
+    color: blue;
+margin: 10px;
+font-size: 90%;
+font-weight: bold;
+margin-top: 50px;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.tut{
+    background: linear-gradient(yellow,green);
+    height: 80px;
+    text-align: center;
+
+}
+.return2{
+    width: 50%;
+    height: 500px;
+    float: left;
+
+    
+}
+.img1{
+    width: 90px;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 60px;
+    /* float: left; */
+}
+.img1:hover{
+    width: 160px;
+    height: 150px;
+}
+.prac{
+    margin-right: 70px;
+    padding-top: 50px;
+
+}
+.tut02{
+display: flex;
+width: 100%;
+height: 500px;
+/* margin-left: 200px; */
+/* border: 1px solid black; */
+padding-left: 200px;
+padding-top: 50px;
+}
+.tut03{
+    /* margin-left: 110px;  */
+    width: 50%;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     /* border: 1px solid black;  */
+margin-right: 130px;     
+}
+.tut04{
+    text-align: center;
+    color: blue;
+}
+body{
+    background-image: url(./background\ img.webp);
+}
+
+.tut06{
+    text-align: center;
+    margin-top: 50px;
+    height: 300px;
+    text-align: center;
+
+}
+.para{
+    display: flex;
+    margin-left: 440px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.para2{
+    margin-left: 250px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.head6{
+    text-align: center;
+}
+.photo1{
+    width: 60px;
+    height: 30px;
+}
+.tut07{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 350px;
+    float: left;
+    margin-left: 250px;
+    margin-top: 30px;
+
+}
+.tut09{
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.photo2{
+    width:60px;
+    height: 30px;
+}
+.tut08{
+    /* border: 1px solid black; */
+    width: 200px;
+    height:350px;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+.head7{
+    text-align: center;
+    color: tomato;
+    height: 30px;
+}
+.practice{
+    display: flex;
+    height:430px ;
+}
+.tut10{
+    width: 200px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 350px;
+
+}
+.tut11{
+    text-align: center;
+    margin-top: 50px;
+}
+.pract3{
+    text-transform: capitalize;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+.tut12{
+    text-align: center;
+    margin-top: 40px;
+}
+.practice5{
+    margin-top: 50px;
+    display: flex;
+}
+.tut13{
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    margin-left: 250px;
+
+}
+.tut14{
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    margin-left: 350px;
+}
+.tut15{
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    margin-left: 350px;
+}
+.tut16{
+    margin-top: 30px;
+    text-align: center;
+}
+.practice7{
+    display: flex;
+}
+.tut17{
+    width: 50%;
+    float: left;
+    background-color: blueviolet;
+    height: 200px;
+}
+.tut18{
+    width: 50%;
+    float: right;
+    background-color: chartreuse;
+height: 200px;
+}
+.tut19{
+    margin-top: 50px;
+    text-align: center;
+}
+span{
+    color: green;
+    font-weight: bold;
+}
+.pract4{
+    text-align: center;
+    font-family: sans-serif;
+}
+.tut20{
+    width: 110%;
+    height: 350px;
+    position: relative;
+margin-left: 600px;
+
+}
+.pract8{
+    text-align: center;
+}
+.tut21{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 130%;
+}
+.tut22{
+    text-align: center;
+    margin-top: 20px;
+}
+.tut23{
+    display: flex;
+}
+.line{
+    margin-left: 100px;
+    border: 1px solid black;
+    background-color: chartreuse;
+    width: 20%;
+    text-align: center;
+}
+.line:hover{
+    background-color: darkcyan;
+}
+.line1:hover{
+    background-color:darkred;
+}
+.line2:hover{
+    background-color: darkcyan;
+}
+.line1{
+    margin-left: 300px;
+    border: 1px solid black;
+    background-color: chartreuse;
+    width: 20%;
+    text-align: center;
+}
+.line2{
+    margin-left: 250px;
+    border: 1px solid black;
+    background-color: chartreuse;
+    width: 20%;
+    text-align: center;
+}
+.line3{
+    border: 1px solid black;
+    background-color: chartreuse;
+    width: 10%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 900px;
+}
+.line3:hover{
+    background-color: gold;
+}
+.line4{
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 10px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+}
+.img11{
+    width: 50%;
+    /* background-color: tomato; */
+    height: 200px;
+    margin-left: 700px;
+
+}
+.tut26{
+    /* border: 1px solid black; */
+    width: 500px;
+    /* position: relative; */
+} 
+.line6{
+    margin-left: 800px;
+    margin-top: 40px;
+}
+#tut27{
+margin-left: 800px;
+/* border: 1px solid black; */
+width: 300px;
+height: 250px;
+margin-top: 80px;
+}
+
+#tut28{
+margin-left: 800px;
+    margin-top: 20px;
+}
+
+.Act{
+    height: 300px;
+    margin-left: 200px;
+    display: flex;
+
+}
+.tut50{
+    float: right;
+    /* width: 500px; */
+    margin-right: 60px;
+    width: 50%;
+}
+.Act3{
+    margin-left: 600px;
+}
+
+.Hi5{
+    text-align: center;
+    color: royalblue;
+}
+.hi5{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+border: 1px solid black;
+}
+.Act5{
+    margin-left: 300px;
+    display: flex;
+}
+.Act6{
+    width: 50%;
+    margin-left: 200px;
+    font-weight: bold;
+    display: none;
+}
+.Act7{
+
+        width: 50%;
+        margin-left: 200px;
+        font-weight: bold;
+        display: none;
+    
+}
+#Role{
+    
+    display: table;
+}
+
+/*  */
+#Role1{
+    font-display: table;
+}

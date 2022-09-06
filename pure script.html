@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Project</title>
+    <link rel="stylesheet" href="./pure css.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="container">
+        <ul class="text-id">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact me</li>
+        </ul>
+    </div>
+    <h1>Javascript And HTML OR CSS Project Practice</h1>
+    <div class="container1">
+        <div class="Clg-Form">
+            Name:<br>
+            <input type="text" value="Name" id="name" name="name"><br><br>
+            LastName:<br>
+            <input type="text" value="Last Name" id="name" name="lastname"><br><br>
+            Password:<br>
+            <input type="password" value="Password" id="pass" placeholder="Prajyot@12"><br><br>
+            Mail:<br>
+            <input type="Mail" value="Mail" id="Mail"><br><br>
+
+            Submit:<br>
+            <button onclick="Login()">Login Form</button>
+        </div>
+    </div>
+    <div class="result">
+        <div class="per">
+            <h2>Fill The Your PCM Marks</h2>
+            Maths:<br>
+            <input type="range" id="vol" name="vol" min="0" max="100" class="input"><br><br>
+            Science:<br>
+            <input type="range" id="vol" name="vol" min="0" max="100" class="input"><br><br>
+            Physics:<br>
+            <input type="range" id="vol" name="vol" min="0" max="100" class="input"><br><br>
+
+            Submit:<br>
+            <button onclick="Percentage()">Click me</button>
+
+        </div>
+    </div>
+    <div class="age">
+        Birthday:<br>
+        <input type="date" id="birthday" name="birthday">
+        <button onclick="show()">Submit</button>
+    </div>
+    <h3> Search The Result</h3>
+    <div class="std">
+        Search The Name:<br>
+        <input type="search" id="myname" name="name" class="search" onkeyup="Searchfunction()"><br><br>
+        <!-- <div class="table"> -->
+            <table id="demo">
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Eligibale</th>
+            </tr>
+            <tr>
+                 <td>Prajyot Rajpure</td>
+                 <td>80%</td>
+                 <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Pavan Kumar</td>
+                <td>60%</td>
+                <td>Pass</td>
+           </tr>
+           <tr>
+            <td>Pratik Rajpure</td>
+            <td>70%</td>
+            <td>Pass</td>
+       </tr>
+       <tr>
+        <td>prasad Divekar</td>
+        <td>40%</td>
+        <td>Fail</td>
+   </tr>
+            </table>
+    </div>
+    <!-- <div class="Annim">
+        <h4>Annimation</h4>
+    </div> -->
+    <div id="Hi">
+        <button onclick="Ans()">Enter Your Qualification</button>
+    </div>
+    <div id="rad">
+        <button onclick="tut3()" class="tut6">Print Your Clg Fees</button>
+        <ul id="tut5">
+            <li class="td">Prajyot</li>
+            <li class="td">Rajpure</li>
+            <li class="td">BSC</li>
+            <li class="td">65000</li>
+            <li class="td">Pune</li>
+        </ul>
+        </div>
+        
+    <script>
+
+        alert("Hello Prajyot")
+
+        function tut3(){
+            // var FF=["Prajyot","Rajpure","BSC",65000,"Pune"];
+            // var F=window.print(FF);
+        //   var tt=location.assign("file:///C:/Users/jain7/Desktop/prajyot/HTML%20PROJECT/page.html")
+
+            var FF=document.getElementsByClassName('td').value;
+             document.getElementById('rad').innerHTML=window.print(FF);
+            // console.log(FF);
+
+        }
+
+        function Ans(){
+            var tut=window.prompt("What is Your Qualification");
+                if(tut==="BE"){
+                    alert("Congrts You are Eligible")
+
+                }
+
+                else{
+                    alert("You are not eligible")
+            
+                }
+            }
+        
+
+        function Searchfunction(){
+            let s=document.getElementById('myname').value;
+            let tables=document.getElementById('demo').value;
+            let tr=demo.getElementByTagName('tr');
+            for(i=0;i<tr.length;i++){
+                let td=tr[i].getElementByTagName('td')[0];
+
+                if(td){
+                    let text1=td.textcontent || td.innerHTML;
+                    if(text1.indexof(s) > -1){
+                        tr[i].style.display=" ";
+                    }
+                    else{
+                        tr[i].style.display="none ";
+
+                    }
+                }
+            }
+        }
+        function Login() {
+            // var Name=document.getElementById('name').value;
+            // var last=document.getElementById('lastname').value;
+            var password = document.getElementById('pass').value;
+            var mail = document.getElementById('Mail').value;
+
+            if (password == "Prajyot@12" && mail == "Prajyot@gmail.com") {
+                alert("Login Succesfully Done")
+            }
+            else {
+                alert("login Failed")
+            }
+        }
+
+        function Percentage() {
+            var pers = document.getElementById('vol').value;
+
+            if (pers >= 50) {
+                alert("Your Are Pass")
+            }
+            else {
+                alert('Your Failed')
+            }
+        }
+
+        function show() {
+            var x = document.getElementById('birthday').value;
+            var t = x - getFullYear();
+            if (t >= 20) {
+                alert('You Are Apply This Form');
+
+            }
+            else {
+                alert("You not Eligibale");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

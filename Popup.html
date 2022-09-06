@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+<style>
+    * {
+        background-color: coral;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        height: 70vh;
+        background-color: cornsilk;
+        /* padding: 10px 60px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 10px 60px;
+        background-color: crimson;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        outline: none;
+    }
+
+    .popup {
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        top: 0%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        background-color: teal;
+        visibility: hidden;
+    }
+
+    .open-popup {
+        visibility: visible;
+        top: 50%;
+
+    }
+
+    .popup button {
+        width: 70%;
+        color: white;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .Act {
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        top: 110%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        background-color: teal;
+        visibility: hidden;
+
+    }
+
+    .dj-Act {
+        visibility: visible;
+        left: 50%;
+        top: 110%;
+    }
+
+    .container-input {
+        width: 100%;
+        height: 70vh;
+        background-color: cornsilk;
+        /* padding: 10px 60px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row1 {
+        padding: 10px 60px;
+        background-color: crimson;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        outline: none;
+
+
+    }
+
+    .x {
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Act button {
+        width: 70%;
+        color: white;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .tut09 {
+        cursor: pointer;
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    #t {
+        cursor: pointer;
+        width: 180px;
+        margin-bottom: 20px;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openpopup()">Submit</button>
+        <div class="popup" id="Popup">
+            <h1>Hello Prajyot!</h1>
+            <p>Thank you! You Are Complete Information Fill Up The Form</p>
+            <button type="button" onclick="closepopup()">OK</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container-input">
+        <button type="submit" class="row1" onclick="form1()">Fill Up The Form</button>
+        <div class="Act" id="Demo2">
+            <input type="text" name="name" id="name" value="Name" class="x">
+            <br><br>
+            <input type="password" name="pass" id="pass" value="Password" class="x">
+            <br><br>
+            <input type="text" name="num" id="num" value="Contact number" class="x"><br><br>
+            <button type="submit" onclick="demo3()" id="t">Submit form</button>
+        </div>
+    </div><br><br>
+    <div class="forgatpass">
+        <form onsubmit="return myfun()">
+        New Password:
+        <input type="password" name="pass1" id="pass1"><br><br>
+        <span id="mess"></span><br><br> 
+        Conform Password:
+        <input type="password" name="pass2" id="pass2"><br><br>
+         <span id="mess"></span><br><br> 
+
+        <input type="submit" value="Submit">
+</form>
+    </div>
+    
+
+    <script>
+        let x = document.getElementById('Popup');
+
+        function openpopup() {
+            x.classList.add("open-popup")
+        }
+        function closepopup() {
+            x.classList.remove("open-popup")
+        }
+
+
+
+        let y = document.getElementById('Demo2');
+        let u = document.getElementById('name');
+        let i = document.getElementById('pass');
+        let z = document.getElementById('num');
+
+
+
+        function form1() {
+            y.classList.add("dj-Act");
+        }
+        function demo3() {
+            document.write(u + i + z);
+        }
+
+        function myfun() {
+
+            var peo = document.getElementById('pass1').value;
+             let po = document.getElementById('pass2').value;
+           if(peo!=po)  {
+              document.getElementById('mess').innerHTML="Please fill the password";
+        }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

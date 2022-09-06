@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgat Password</title>
+</head>
+<style>
+    .result{
+        border: 1px solid black;
+        background: blue;
+        padding: 10px;
+    }
+    .tut{
+        width: 170px;
+        height: 10px;
+        padding: 10px;
+        margin: 0px;
+        margin-left: 30px;
+        color: black;
+    }
+    .tut1{
+        color: brown;
+        width: 140px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div class="result">
+    New Password:
+    <input type="password" value="" id="pass" class="tut">
+    <span id="mess"></span>
+    <br><br>
+    Conform Password:
+    <input type="password" value="" id="passs" class="tut"><br><br>
+    Submit:
+    <input type="submit" value="submit" onclick="myfun()" class="tut1">
+</div>
+<br><br>
+<div id="result1">
+    
+    <h1>Whts is javascript</h1>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+<input type="submit"  onclick="fun()" value="submit">
+   <br><br>
+</div>
+<script>
+//     function fun(){
+
+//     // var c=document.getElementById('result1').value;
+//     // var d=document.getElementById('html').value;
+//     // var e=document.getElementById('css').value;
+//     var f=document.getElementById('javascript').value;
+//     // var v=document.getElementById('javascript').value;
+
+
+
+//     // if(d==v){
+//     //     console.log('ans is wrong');
+//     // }
+//     // else if(e==v){
+//     //     console.log('ans is wrong');
+//     
+//     if
+//         (document.getElementById('javascript').checked){
+//             alert('ans is true')
+//         }
+
+//     }
+//     // else if(f==" "){
+//     //     alert('ans is wrong');
+//     // }
+//     else{
+//         alert('You are not pass');
+//     }
+// 
+
+
+    function myfun(){
+        var a=document.getElementById('pass').value;
+        var b=document.getElementById('passs').value;
+
+        if(a!=b){
+            document.getElementById('mess').innerHTML="Pass is not correct";
+        }
+        else{
+            document.getElementById('mess').innerHTML="Pass is correct";
+        }
+    }
+
+
+
+
+    function parent(){
+        var name="Prajyot"
+        function child(){
+         console.log(name);
+        }
+        child();
+    }
+    parent();
+
+
+</script>
+</body>
+</html>
